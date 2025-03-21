@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitame</title>
+  <link rel="stylesheet" href="./web/assets/css/style.css" />
+  <!-- Font Awesome CDN link for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+  
+  
+  <div class="wrapper">
+    <div class="title"><span>Please Log In!</span></div>
+    
+    <form onsubmit="return checkLogin(event)">
+      <div class="row">
+        <i class="fas fa-user"></i>
+        <input type="text" id="identity" placeholder="Identification" required />
+      </div>
+      <div class="row">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+      <div class="pass"><a href="#">Forgot password?</a></div>
+      <div class="row button">
+        <input type="submit" value="Login"  />
+      </div>
+      <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+      <p id="message" style="color: red; font-weight: bold;"></p>
+    </form>
+    
+  </div>
+ 
+  
+  
+  
+  <script src="web/assets/script/script.js"></script>
+  
+</body>
+</html>
